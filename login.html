@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    
+    <title>Login here</title>
+    
+</head>
+<body>
+    <nav>
+        <h2 id="home_logo">Raudha.com</h2>
+        <div id="home_sign_up">
+            <p>New User?</p>
+            <a href="register.html">sign up</a>
+        </nav>
+    <div class="container_el">
+        
+        <div id="content_el">
+            <div class="logos">
+                <h3 class="logo">Raudha.com</h3>
+                <p id="sign_in" >New user? <a href="register.html" >sign up</a></p>
+            </div>
+
+            <div class="main_info">
+            <img src="https://cdn.dribbble.com/users/35810/screenshots/13904284/igc-controlling.taxes-blog_1600x1200.png?compress=1&resize=320x240&vertical=top" alt=""id="pic_el" >
+
+            <div id="icon_el">
+                <p id="icon_text">login with !</p>
+                <p class="icons">
+                   <a href="#"> <img src="https://img.icons8.com/fluency/2x/linkedin.png" alt="Linkedin"></a>
+                </p>
+                <p class="icons">
+                    <a href="#"> <img src="https://img.icons8.com/color/2x/twitter.png" alt="Twiter"></a>
+                    </p>
+                <p class="icons">
+                    <a href="#"> <img src="https://img.icons8.com/color/2x/facebook-new.png" alt="Facebook"></a>
+                </p>
+                </div>
+        
+            <form  id="login_container">
+                <div class="forms_el">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16" >
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                      </svg> 
+                <input type="text" placeholder="Username" id="input_el" class="username" >
+                <p class="message_error" id="msg_username"></p>
+            </div>
+                <div class="forms_el">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                      </svg>
+                <input type="email" placeholder="Email" id="input_el" class="email">
+                <p class="message_error" id="msg_email"></p>
+            </div>
+                <div class="forms_el">
+                    <i class="material-icons" id="eye_show">visibility</i>
+                     
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                      </svg>
+                <input type="password" placeholder="Password" id="input_el" class="password">
+                <p class="message_error" id="msg_el"></p>
+            </div>
+            <div class="button _container">
+                <input type="submit" value="login" class="button_sign">
+            </div>
+            
+            <P class="forgot">forgot password?</P>
+            </form>
+        </div>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html> 

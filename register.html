@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    
+    <title>Register here</title>
+</head>
+<body>
+    <nav>
+        <h2 id="home_logo">Raudha.com</h2>
+        <div id="home_sign_up">
+            <p>New User?</p>
+            <a href="register.html">sign up</a>
+        </nav>
+    <div>
+        <form id="reg_container">
+            <div id="reg_content">
+           <label for="Username">Create username : </label>     
+           <input type="text" placeholder="Username" class="reg_input" id="name_input"> 
+           <p class="reg_error" id="crt_username"></p>
+           </div> 
+            <div id="reg_content" >
+                <label for="Email">Create email : </label>
+           <input type="email" placeholder="Email"class="reg_input" id="email_input"> 
+           <p class="reg_error" id="crt_email"></p>
+           </div> 
+            <div id="reg_content">
+                <i class="material-icons" class="material" id="eye_show">visibility</i>
+                <label for="password">Create password : </label>
+           <input type="password" placeholder="Password" class="reg_input" id="pswd_input"> 
+           <p class="reg_error" id="crt_pswd"></p>
+           </div> 
+            <div  id="reg_content">
+                <label for="conform">Confirm : </label>
+           <input type="password" placeholder="Password"class="reg_input" id="con_input"> 
+           <p class="reg_error" id="crt_confirm"></p>
+           </div> 
+           
+           <label for="gender" class="label_gender">Gender : </label>
+           <select name="--choose gender--" id="reg_gender">
+            <option id="gender" value=" ">--choose--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+           </select>
+           
+           <input type="submit" value="Register" id="reg_rst">
+        </form>
+    </div>
+
+    <div>
+        <ul id="ul_el">
+            
+           <li class="li_el" id="lee">No data submitted</li>
+        </ul>
+    </div>
+    
+    <script src="register.js"></script>
+</body>
+</html>

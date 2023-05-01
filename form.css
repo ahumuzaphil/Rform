@@ -1,0 +1,428 @@
+/*body{
+    background-image: linear-gradient(to bottom left, blueviolet , red);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 32.4rem;
+    
+}*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+    font-family: 'Dancing Script', cursive;
+    
+}
+.container_el{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    
+}
+form{
+    align-items: center;
+    
+}
+input{
+    padding-left: 20px;
+    justify-content: center;
+}
+#content_el{
+    justify-content: center;
+    text-align: center;
+    box-shadow:  0 2px 10px rgba(0,0,0,0.2);
+    border-radius: 0.1rem;
+    padding: 1rem;
+    background: white;
+    
+}
+#input_el{
+    height: 2rem;
+    width: 13rem;
+    margin-top: 1rem;
+    background: white;
+    box-shadow:  0 2px 10px rgba(0,0,0,0.2);
+    border: none;
+    border-radius: 0.1rem;
+    outline: none;
+}
+
+.message_error{
+    font-size: 12px;
+    padding-top: 5px;
+    color: red;
+    margin-right: 25px;
+    animation-name: slide;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    
+}
+
+@keyframes slide{
+    from{margin-right: -50px; color: blueviolet; opacity: 10%;}
+    to{margin-right: 25px;}
+}
+.reg_error{
+    font-size: 12px;
+    padding-top: 5px;
+    color: red;
+    margin-right: 25px;
+    animation-name: register;
+    animation-duration: 3.5s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    
+}
+@keyframes register{
+    from{margin-left: -50px; color: blueviolet; opacity: 10%;}
+    to{margin-right: 25px;}
+}
+
+.logos{
+    display: flex;
+    align-items: justify;
+    justify-content: center;
+}
+.logo{
+   margin-right: 23rem; 
+   font-size: 1.1rem;
+   font-weight: 45;
+   background: linear-gradient(to bottom right, blueviolet,red);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+}
+#sign_in{
+    font-size: 12px;
+    padding-right: 5px;
+    color: grey;
+}
+.main_info{
+    padding-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    background: linear-gradient(to bottom right, blueviolet,red);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+}
+form{
+    float: right;
+}
+.forms_el input[type=text]{
+    padding-left: 40px;
+    letter-spacing: 1.7px;
+}
+.forms_el input[type=email]{
+    padding-left: 40px;
+    letter-spacing: 1.7px;
+}
+.forms_el input[type=password]{
+    padding-left: 40px;
+    letter-spacing: 1.7px;
+}
+.forms_el {
+    position: relative;
+}
+.forms_el svg{
+  position: absolute; 
+  margin-top: 23px;
+  margin-left: 12px;
+  color: grey;
+}
+.button_container{
+    padding-top: 2rem;
+}
+.button_sign{
+    background-image: linear-gradient(to bottom right, blueviolet , red);
+    color: white;
+    padding: 9px 5rem 9px 5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.1rem;
+    transition: all 0.4s ease-in-out;
+}
+.button_sign:hover{
+    
+    padding: 9.5px 5.5rem 9.5px 5.5rem;
+    background-image: linear-gradient(to bottom left, red, blueviolet );
+}
+img{
+    position: relative;
+}
+#icon_el{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-right: 4rem;
+    margin-top: -1rem;
+    margin-left: 1rem;
+}
+.icons{ 
+    float: left; 
+    padding: 4px; 
+}
+#icon_text{
+    font-size: 15px;
+    margin-right: 0.8rem;
+}
+.icons img{
+    width: 20px;
+}
+.forgot{
+    margin-left: 5rem;
+    margin-top: 3px;
+    color: blueviolet;
+}
+#eye_show{
+    margin-left: 11rem;
+    margin-top: 1.2rem;
+    color: rgb(214, 214, 214);
+    position: absolute;
+    cursor: pointer;
+}
+
+
+
+
+/*--Home page--*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.7rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    align-items: justify;
+    margin-bottom: 1rem;
+    border-bottom: solid 1px rgb(228, 227, 227);
+}
+#home_sign_up{
+    display: flex;
+    margin-left: 15rem;
+}
+#home_logo{
+    margin-right: 15rem;
+    background: linear-gradient(to bottom right, blueviolet,red);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+}
+#baby_raudha{
+    height: 144px;
+    width: 135px;
+    border-radius: 10rem;
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+
+}
+#home_main{
+    width: 35rem;
+    justify-content: center;
+    margin-top: 7rem;
+    margin-left: 24rem;
+}
+.home_log{
+    margin-top: 1rem;
+    color: black;
+    border: solid 1px rgb(199, 197, 197);
+    width: 6rem;
+    padding: 0.7rem;
+    padding-left: 10px;
+    border-radius: 1rem;
+}
+
+#info{
+    margin-bottom: 1.5rem;
+}
+#home_nem{
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+    color: blueviolet;
+}
+
+/*--registration--*/
+
+#reg_container{
+    background: white;
+    margin-right: 28rem;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+#reg_content{
+    margin: 1rem;
+}
+label{
+    background: linear-gradient(to bottom right, blueviolet,red);
+    -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+}
+.reg_input{
+    display: block;
+    width: 15rem;
+    height: 2rem;
+    margin-top: 4px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    outline: none;
+}
+select{
+    color: grey;
+    display: block;
+    width: 7rem;
+    margin-top: 4px;
+    margin-left: 1rem;
+    padding: 4px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    outline: none;
+}
+option{
+    color: grey;
+}
+.label_gender{
+    margin-left: 1rem;
+}
+#reg_rst{
+    color: white;
+    background: blueviolet;
+    border: none;
+    width: 15rem;
+    height: 2rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    transition: all 2.4s ease-in-out;
+}
+#reg_rst:hover{
+    background-image: linear-gradient(to bottom right, blueviolet , red);
+}
+
+/*Todo list */
+#ul_el{
+   margin-top: 16rem;
+    margin-left: 5rem;
+    color: rgb(160, 160, 160);
+    background: whitesmoke;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    width: 16rem;
+}
+.li_el{
+    
+    list-style: none;
+    width: 21rem;
+    border-radius: 4px;
+}
+.for_back{
+    
+}
+
+
+@media screen and (max-width: 960px){
+
+    .container_el{
+     margin-bottom: 1rem;
+     margin-top: 1rem;
+     border-style: none;
+    }
+    #content_el{
+     width: 25rem;
+     box-shadow: none;
+    }
+    .logo{
+        margin-right: 0;
+        
+    }
+    .logos{
+        display: flex;
+        justify-content: space-around;
+        opacity: 0;
+    }
+    #icon_el{
+    
+        margin-left: 1rem;
+        margin-top: 16rem;
+    }
+    #input_el{
+        margin-right: 2rem;
+    }
+    .button_sign{
+        margin-left: -1.5rem;
+    }
+    form{
+        margin-left: 5rem;
+        margin-bottom: 3rem;
+        border-bottom: 1px solid rgb(199, 193, 193);
+    }
+    .forgot{
+        padding-bottom: 1rem;
+        margin-left: 0.4rem;
+    }
+    /*--Home page--*/
+
+    nav{
+        border-bottom: none; 
+        width: -3rem; 
+        margin-right: 1rem;
+    
+    }
+    #home_sign_up{
+        display: flex;
+        margin-left: 7rem;
+    }
+    #home_logo{
+        margin-right: -1rem;
+        background: linear-gradient(to bottom right, blueviolet,red);
+       -webkit-text-fill-color: transparent;
+       -webkit-background-clip: text;
+    }
+    #baby_raudha{
+        height: 144px;
+        width: 135px;
+        border-radius: 10rem;
+        margin-left: 7rem;
+        margin-bottom: 2rem;
+    
+    }
+    #home_main{
+        width: 23rem;
+        justify-content: center;
+        margin-top: 7rem;
+        margin-left: -1rem;
+    }
+    .home_log{
+        margin-top: 1rem;
+        color: black;
+        border: solid 1px rgb(199, 197, 197);
+        
+        border-radius: 1rem;
+        margin-left: 1.5rem;
+        display: flex;
+    }
+    
+    #info{
+        margin-bottom: 1.5rem;
+        width: 19rem;
+        margin-left: 2rem;
+    }
+    #home_nem{
+        margin-left: 7rem;
+        margin-bottom: 1rem;
+        color: blueviolet;
+    }
+
+    /*--regitration--*/
+    #reg_container{
+        margin-right: 0rem;
+        box-shadow: none;
+    }
+    .ul_el{
+        height: 1rem;
+        margin-right: 0rem;
+    }
+    
+    
+    }
